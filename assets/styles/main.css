@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+
+html {
+    height: 100%;
+    background-image: url('/assets/images/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body {
+    color: #a8a8a8;
+    font-family: 'Arvo';
+    margin: 0;
+}
+
+nav .logo a {
+	background-image: url("../images/logo.png");
+	background-size: 90px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 144px;
+	width: 144px;
+	position: relative;
+    top: -25px;
+    right: 20px;
+}
+
+.topnav {
+    list-style: none;
+    margin: 20px 0 0 0;
+    text-align: right;
+}
+
+.topnav a {
+    text-decoration: none;
+}
+
+a {
+    color: #a8a8a8;
+}
+
+li:first-child {
+    float: left; 
+}
+
+a:hover {
+    color: white;
+}
+
+li {
+    display: inline-block;
+    padding-right: 2%;
+    font-size: 22px;
+}
+
+.about {
+    text-align: center;
+    padding: 10%;
+}
+
+.circle-image img {
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.name {
+    font-size: 26px;
+}
+
+.about-info {
+    font-size: 16px;
+}
+
+footer {
+    font-size: 13px;
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 2%;
+}
+
+.footer-row {
+    margin: 10px;
+}
+
+.footer-info {
+    margin: 3px;
+}
+
+.fa {
+    padding: 3px;
+    width: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.fa:hover {
+    opacity: 1.0;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: #127912;
+    color: white;
+}
