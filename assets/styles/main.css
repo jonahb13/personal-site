@@ -3,11 +3,12 @@
 
 html {
     height: 100%;
-    color: #161718;
+    min-height: 100%;
+    background-color: #161718;
     background-image: url('/assets/images/background.png');
-    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,12 +17,19 @@ html {
 body {
     color: #a8a8a8;
     font-family: 'Arvo';
+    position: relative;
+    margin: 0;
+    min-height: 97vh;
+    /* padding-bottom: 60px; */
+}
+
+nav {
     margin: 0;
 }
 
 nav .logo a {
 	background-image: url("/assets/images/logo.png");
-	background-size: 90px;
+	background-size: 100px;
 	background-repeat: no-repeat;
 	display: inline-block;
 	height: 144px;
@@ -29,11 +37,12 @@ nav .logo a {
 	position: relative;
     top: -25px;
     right: 20px;
+    margin: 0;
 }
 
 .topnav {
     list-style: none;
-    margin: 20px 0 0 0;
+    /* margin: 20px 0 0 0; */
     text-align: right;
 }
 
@@ -60,6 +69,15 @@ li {
 }
 
 .about {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.content {
     text-align: center;
     padding: 10%;
 }
@@ -72,12 +90,12 @@ li {
     display: inline-block;
 }
 
-.name {
-    font-size: 26px;
+.title {
+    font-size: 34px;
 }
 
-.about-info {
-    font-size: 16px;
+.info {
+    font-size: 20px;
 }
 
 footer {
@@ -85,9 +103,10 @@ footer {
     text-align: center;
     min-width: 100%;
     max-width: 100%;
-    height: auto;
-    position: fixed;
-    bottom: 2%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    bottom: 0;
+    position: absolute; 
 }
 
 .footer-row {
@@ -99,8 +118,9 @@ footer {
 }
 
 .fa {
-    padding: 3px;
-    width: 14px;
+    padding: 7px;
+    font-size: 30px;
+    width: 15px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
