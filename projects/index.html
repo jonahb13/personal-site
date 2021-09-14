@@ -4,21 +4,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jonah Beers</title>
+        <meta http-equiv="cache-control" content="no-cache">
+        <title>Jonah Beers - Projects</title>
         <link rel="stylesheet" href="/assets/styles/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <script> 
-            $(function(){
-                $("#header").load("/assets/common/header.html"); 
-                $("#footer").load("/assets/common/footer.html"); 
-            });
-        </script>
     </head>
 
     <body>
-        <div id="header"></div>
+        <nav>
+            <ul class="topnav">
+                <li class="logo">
+                    <a href="/"></a>
+                </li>
+                <li>
+                    <a href="/">ABOUT</a>
+                </li>
+                <li>
+                    <a href="/projects">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="/assets/files/resume.pdf" target="_blank">RESUME</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content about">
+            <h1>Coming Soon</h1>
+        </div>
         
-        <div id="footer"></div>
+        <footer>
+            <div class="footer-row">
+                <span class="footer-info"><a href="https://www.linkedin.com/in/jonahbeers/" class="fa fa-linkedin" target="_blank"></a></span>
+                <span class="footer-info"><a href="https://github.com/jonahb13" class="fa fa-github" target="_blank"></a></span>
+            </div>
+            <div>
+                The source code for this site can be found on 
+                <a href="https://github.com/jonahb13/personal-site" target="_blank">GitHub</a>. &copy; 2021 Jonah Beers
+            </div>
+        </footer>    
     </body>
 </html>
